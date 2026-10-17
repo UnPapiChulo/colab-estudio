@@ -60,10 +60,13 @@
 
   // A scroll-linked line connects the actual three project stages.
   const process=document.querySelector('.process');
-  const updateProcess=()=>{if(!process)return;const r=process.getBoundingClientRect();const progress=Math.min(1,Math.max(0,(innerHeight*.82-r.top)/Math.max(r.height*.75,1)));process.style.setProperty('--process-progress',progress);};
+  const updateProcess=()=>{if(!process)return;const r=process.getBoundingClientRect();const progress=Math.min(1,Math.max(0,(innerHeight*.82-r.top)/Math.max(r.height*.75,1)));process.style.setProperty('--process-progress',progress);process.querySelectorAll('.process-grid article').forEach((step,i)=>step.classList.toggle('step-active',progress>=(i+.25)/3));};
   let processFrame=0;addEventListener('scroll',()=>{if(!processFrame)processFrame=requestAnimationFrame(()=>{updateProcess();processFrame=0;});},{passive:true});updateProcess();
   // Freeze decorative loops outside the viewport.
-  if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>e.target.classList.toggle('motion-in-view',e.isIntersecting)));document.querySelectorAll('.idea-scene,.conversation-art,.marquee').forEach(el=>observer.observe(el));}
+  if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>e.target.classList.toggle('motion-in-view',e.isIntersecting)));document.querySelectorAll('.idea-scene,.conversation-art,.marquee,.hero-v3,.services,.contact').forEach(el=>observer.observe(el));}
+
+  const updatePageVisibility=()=>root.classList.toggle('page-hidden',document.hidden);
+  document.addEventListener('visibilitychange',updatePageVisibility);updatePageVisibility();
 
   // Catalog starts with a few entries and supports filtering and pagination as it grows.
   const search=document.querySelector('#project-search');
