@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "ajitate",
+    "name": "Ajitate",
+    "sector": "Gastronomía",
+    "kind": "Diseño & desarrollo",
+    "city": "Cuenca",
+    "tagline": "Una web con mucho sabor.",
+    "url": "https://colab-websites.github.io/Ajitate/",
+    "image": "ajitate-live-desktop.png",
+    "alt": "Sitio de Ajitate con menú y fotografía Tex-Mex",
+    "description": "El carácter de un restaurante Tex-Mex, llevado a la pantalla. Una experiencia para explorar el menú, descubrir especialidades y preparar un pedido.",
+    "intent": "Poner la comida, el ambiente y la personalidad del restaurante al frente, con un recorrido sencillo desde el antojo hasta el menú.",
+    "features": [
+      [
+        "Un menú para explorar",
+        "Categorías y buscador para encontrar platos, bebidas y especialidades."
+      ],
+      [
+        "Del plato al pedido",
+        "Selección de productos y una consulta preparada para WhatsApp."
+      ],
+      [
+        "Un lugar con historia",
+        "El restaurante, su ubicación y sus canales de contacto en el mismo recorrido."
+      ]
+    ]
+  },
+  {
+    "slug": "lockpoint",
+    "name": "Lockpoint",
+    "sector": "Servicios",
+    "kind": "Diseño & desarrollo",
+    "city": "Cuenca",
+    "tagline": "La solución, a un clic.",
+    "url": "https://lockpoint-cuenca.andymaruri.chatgpt.site/",
+    "image": "lockpoint-live-desktop.png",
+    "alt": "Sitio de Lockpoint con servicios de cerrajería en Cuenca",
+    "description": "Una presencia digital clara para una cerrajería residencial y automotriz. El sitio organiza los servicios y acerca al visitante a la consulta que necesita.",
+    "intent": "Ayudar a una persona a identificar el servicio que busca y encontrar una forma directa de consultar, desde su celular o computadora.",
+    "features": [
+      [
+        "Servicios claros",
+        "Información organizada para necesidades residenciales y automotrices."
+      ],
+      [
+        "Una consulta con contexto",
+        "Selector del motivo de contacto para preparar la conversación por WhatsApp."
+      ],
+      [
+        "Dudas resueltas",
+        "Preguntas frecuentes y detalles de contacto a mano."
+      ]
+    ]
+  },
+  {
+    "slug": "cenia",
+    "name": "CENIA",
+    "sector": "Educación",
+    "kind": "Rediseño web",
+    "city": "Cuenca",
+    "tagline": "Un espacio digital para crecer.",
+    "url": "https://cenia-crecer.andymaruri.chatgpt.site/",
+    "image": "cenia-live-desktop.png",
+    "alt": "Sitio de CENIA con servicios de apoyo académico y orientación familiar",
+    "description": "Un espacio digital cercano para el Centro de Innovación y Apoyo Académico. Una navegación que ayuda a las familias a conocer los servicios y encontrar orientación.",
+    "intent": "Presentar la información de forma acogedora, facilitar la exploración de los servicios y acompañar a las familias hacia una consulta.",
+    "features": [
+      [
+        "Servicios y modalidades",
+        "Una presentación accesible de las alternativas de apoyo."
+      ],
+      [
+        "Orientación para familias",
+        "Una guía para encontrar el servicio adecuado según la necesidad."
+      ],
+      [
+        "El siguiente paso",
+        "Consulta preparada para WhatsApp, ubicación y respuestas a preguntas frecuentes."
+      ]
+    ]
+  }
+]

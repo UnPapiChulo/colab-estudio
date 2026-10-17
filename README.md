@@ -1,25 +1,27 @@
-# Colab agency website draft
+# Colab agency website
 
-Spanish agency portfolio built as a lightweight static site. Inspiration: KOTA's expressive scale, Fabrica's project presentation, and VIEW SOURCE's atmospheric motion. The visuals and implementation are original.
+Spanish agency website with an original KOTA / Fabrica / VIEW SOURCE-inspired direction.
 
-## Preview
+## Build and preview
 
-Run `python3 -m http.server 8766 --bind 127.0.0.1 --directory dist` from this folder.
+Run `python3 scripts/build.py` to generate the homepage, portfolio catalog and individual project pages. Run `python3 -m http.server 8766 --bind 127.0.0.1 --directory dist` for preview. JavaScript and CSS are served directly.
 
-## Content
+- Edit `src/home.html` for homepage content.
+- Edit `content/projects.json` for verified projects. Homepage is capped at three featured projects; catalog paginates by twelve.
+- Edit `scripts/build.py` for shared headers, cards, catalog and project templates.
+- Frontend code and assets are in `dist/`.
+- Read `DESIGN.md` for user-approved design constraints.
 
-Andy approved Ajitate, Lockpoint, and CENIA as portfolio entries on 2026-10-17. Screenshots show the actual live websites. Source evidence is in `../../output/portfolio-assets/portfolio-sources.json`.
+## Contact
 
-The wordmark is a draft typographic treatment. No exploratory symbol has been adopted as the final logo. Team biographies, testimonials, and performance figures are omitted because none were provided.
+`dist/contact-config.js` accepts a confirmed WhatsApp number or email. It contains no credentials. Both are currently unset: the form prepares and copies a local message and does not send or store it. A configured destination exposes an explicit WhatsApp/email continuation link; it is not an automatic server-delivered enquiry. A shared inbox integration can be added after Andy and Sergio choose their contact setup.
 
-## Contact limitation
+## Portfolio and motion
 
-The contact form prepares a message in the browser and allows the visitor to copy it. It does not send or store enquiries. An explicit preview note explains that the agency contact destination is pending. Connect the confirmed agency WhatsApp number or email before a public launch.
+Andy approved Ajitate, Lockpoint and CENIA. Images are from the actual sites. Play controls load one live public preview at a time, preserving original hero animations. Embedded sites are sandboxed and non-interactive in cards. Preview frames unload when offscreen or the tab is hidden. External availability may affect live previews; images remain available.
 
-## Motion and accessibility
-
-Native WebGL renders decorative linked forms. It stops when offscreen or the tab is hidden. Reduced-motion preferences and a persistent pause control stop animation. CSS artwork remains as fallback when WebGL is unavailable. The menu, service disclosures, and project dialogs use keyboard-accessible controls.
+The original WebGL sculpture uses higher-resolution two-sample rendering for smoother edges. It respects reduced motion and stops when offscreen or hidden. No footer pause control is present, per Andy's request. Motion does not depend on Framer or a paid component library.
 
 ## Hosting
 
-New owner-private Sites draft. The existing public inspiration board is a separate site and remains unchanged.
+Owner-private Site `appgprj_6ad3c96449888191b8fb76f4933b2787`. Preserve its audience. The public inspiration board is separate and unchanged. Sources under the repository's top-level `sources/` are read-only.
