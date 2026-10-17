@@ -18,9 +18,9 @@ Run `python3 scripts/build.py` to generate the homepage, portfolio catalog and i
 
 ## Portfolio and motion
 
-Andy approved Ajitate, Lockpoint and CENIA. Images are from the actual sites. Play controls load one live public preview at a time, preserving original hero animations. Embedded sites are sandboxed and non-interactive in cards. Preview frames unload when offscreen or the tab is hidden. External availability may affect live previews; images remain available.
+Andy approved Ajitate, Lockpoint and CENIA. Images are from the actual sites. Visible cards automatically load their original public websites to preserve hero motion. Embedded sites are sandboxed and non-interactive. Up to three desktop previews or one mobile preview can run at once. Frames unload offscreen or when the tab is hidden; reduced-motion/data-saving settings retain posters. Third-party availability affects live previews.
 
-The original WebGL sculpture uses higher-resolution two-sample rendering for smoother edges. It respects reduced motion and stops when offscreen or hidden. No footer pause control is present, per Andy's request. Motion does not depend on Framer or a paid component library.
+Revision 3 explores white, charcoal and silver with an original HTML/CSS glass-browser conversation in the hero. Level text, CSS chat bubbles, a silver lens, seamless marquee and scroll-linked process line replace the old chain. `dist/refinement.css` overrides the retained baseline styles. The unused original sculpture source remains for reference. No footer pause control is present, per Andy's request. Motion does not depend on Framer or a paid component library.
 
 ## Hosting
 
