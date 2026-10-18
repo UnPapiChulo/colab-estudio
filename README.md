@@ -43,6 +43,12 @@ python3 scripts/build_pages.py --base-path /colab-estudio/ --site-url https://YO
 
 Deploy the generated `_site/` directory. The build adjusts internal navigation, assets and social URL metadata for the deployment path without changing the original root-relative source. `_site/` is generated and excluded from Git.
 
+### GitHub Pages automation
+
+`.github/workflows/pages.yml` builds and deploys the website on pushes to `main`, and can also be started manually from Actions. Enable **Settings → Pages → Source → GitHub Actions** before running it. GitHub Pages must be supported by the repository's visibility and account plan.
+
+The workflow reads the site's actual base path and URL from GitHub Pages, builds all five pages, and uploads only `_site/`. Edit source files, run the build locally, and push to `main` to publish changes. No personal access token or external hosting credentials are needed by this workflow.
+
 Repository visibility and website publication are separate decisions. This draft retains `noindex,nofollow` metadata, but that is not access control. The contact form still only prepares a local message; configure a real destination before using it to collect enquiries.
 
 The `.openai/hosting.json` file belongs to the original Sites integration and contains no credentials. The inspiration board and workspace reference material are not part of this repository.
