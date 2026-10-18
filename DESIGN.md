@@ -9,8 +9,8 @@
 - Selected work uses equal-size aligned cards, level previews and consistent metadata. No staggered Lockpoint card or full-width CENIA card.
 - Project catalog: search, sector filters, pagination, individual project pages. Add verified projects to `content/projects.json` and rebuild.
 - Real project hero animations play automatically when visible. No “Ver en movimiento” controls. At most three visible previews on desktop, one on mobile. Sandboxed, non-interactive frames unload offscreen or on a hidden tab. Reduced-motion and data-saving users get screenshot posters.
-- Do not use decorative asterisk emoji in the marquee or studio section; Andy and Sergio requested their removal. Keep the marquee text-only.
-- The marquee uses two identical, non-shrinking groups, each at least as wide as the viewport, moving exactly one group width per loop.
+- Do not use decorative asterisk emoji; Andy and Sergio requested their removal.
+- No scrolling text strip or black marquee bar between the hero and selected projects. Andy requested removal of the entire strip.
 - Contact requires the person's name, business and email; WhatsApp is optional. Delivery remains a labeled preview until the agency destination is confirmed.
 - Motion should clarify collaboration and project quality, with readable Spanish and real work as the focus. Avoid fabricated claims, testimonials, team details and decorative clutter.
 
