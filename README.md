@@ -22,6 +22,27 @@ Andy approved Ajitate, Lockpoint and CENIA. Images are from the actual sites. Vi
 
 Revision 4 builds on white, charcoal and silver with mist blue and lavender accents with an original HTML/CSS glass-browser conversation in the hero. Level text, CSS chat bubbles, an iridescent lens, seamless marquee, floating service panels and scroll-linked process highlights replace the old chain. `dist/refinement.css` overrides the retained baseline styles. The unused original sculpture source remains for reference. No footer pause control is present, per Andy's request. Motion does not depend on Framer or a paid component library.
 
-## Hosting
+## GitHub copy and deployment
 
-Owner-private Site `appgprj_6ad3c96449888191b8fb76f4933b2787`. Preserve its audience. The public inspiration board is separate and unchanged. Sources under the repository's top-level `sources/` are read-only.
+This repository preserves the existing website and its four original source commits. It is a separate working copy from the ChatGPT Sites preview; pushing here does not update that preview.
+
+The website needs no Node.js packages, API keys, database or paid animation library. Python 3 is sufficient to build and preview it. Keep the font license files with the assets.
+
+For hosting at a domain root:
+
+```sh
+python3 scripts/build_pages.py
+python3 -m http.server 8766 --bind 127.0.0.1 --directory _site
+```
+
+For a GitHub Pages project address, use the repository name as the base path:
+
+```sh
+python3 scripts/build_pages.py --base-path /colab-estudio/ --site-url https://YOUR-ACCOUNT.github.io/colab-estudio/
+```
+
+Deploy the generated `_site/` directory. The build adjusts internal navigation, assets and social URL metadata for the deployment path without changing the original root-relative source. `_site/` is generated and excluded from Git.
+
+Repository visibility and website publication are separate decisions. This draft retains `noindex,nofollow` metadata, but that is not access control. The contact form still only prepares a local message; configure a real destination before using it to collect enquiries.
+
+The `.openai/hosting.json` file belongs to the original Sites integration and contains no credentials. The inspiration board and workspace reference material are not part of this repository.
